@@ -117,3 +117,9 @@ Sorting an array either asc or desc.
 
 ## **Stack**
      A Stack is simple FILO(First In Last Out) structure, any data that we want to insert it goes to the back of the node push, anything we need to remove will goes to the back of the node pop in this code example i will use linkedlist to showcase Stack.
+
+## **ArrayList**
+    It creates a temporary array based on inputsize, say like the inputsize array is of 10 it will create a size of array 15 where length would be 10 and capacity would be 15, so the consecutive push and pop operation will be easy for push it increases the length if length <= capacity, and simply decrements for pop, when length > capacity becomes it increases array capacity and copies all values in respective indices and again repeats the process.
+
+* Array List is useful in performing push and pop of elements along with getting those values in constant time(O(1)), where as in linked list push and pop is easy but getting the values is O(N)
+

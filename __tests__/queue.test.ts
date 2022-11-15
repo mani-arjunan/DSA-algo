@@ -1,4 +1,4 @@
-import { Queue } from '../algos/queue';
+import { Queue } from '../algos/LinkedList/queue';
 
 test('queue', function () {
 	const list = new Queue<number>();
