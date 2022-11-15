@@ -1,4 +1,4 @@
-import { Stack } from '../algos/stack';
+import { Stack } from '../algos/LinkedList/stack';
 
 test('stack', function () {
 	const list = new Stack<number>();
