@@ -104,10 +104,15 @@ Sorting an array either asc or desc.
     Time complexity of this algorithm is O(n2)
 
 ## **Linked List**
-    ```mermaid
-    sequenceDiagram
-    Alice -> Bob: Authentication Request
-    Bob --> Alice: Authentication Response
-    Alice -> Bob:Another authentication Response
-    Bob --> Alice: Another authentication Response
-    ```
+    Linked lists are basically a node which has the next next node's address etc.
+
+* **Singly linked list**
+    head(next -> node1) -> node1(next -> node2) -> node2(next -> node3) -> node3(next -> null) -> null
+
+* **Doubly linked list**
+    head(previous -> null, next -> node1) -> node1(previous -> head, next -> node2) -> node2(previous -> node1, next -> node3) -> node3(previous -> node2, next -> null) -> null
+
+## **Queue**
+    A Queue is simple FIFO(First In First Out) structure, any data that we want to insert it goes to the back of the queue(last of the queue) enqueue, anything we needs to remove will goes to the first of the queue dequeue in this code example i will use linkedlist to showcase Queues.
+
+## **Stack**
