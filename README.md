@@ -116,3 +116,4 @@ Sorting an array either asc or desc.
     A Queue is simple FIFO(First In First Out) structure, any data that we want to insert it goes to the back of the queue(last of the queue) enqueue, anything we needs to remove will goes to the first of the queue dequeue in this code example i will use linkedlist to showcase Queues.
 
 ## **Stack**
+     A Stack is simple FILO(First In Last Out) structure, any data that we want to insert it goes to the back of the node push, anything we need to remove will goes to the back of the node pop in this code example i will use linkedlist to showcase Stack.
