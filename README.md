@@ -123,3 +123,4 @@ Sorting an array either asc or desc.
 
 * ArrayList is useful in performing push and pop of elements along with getting those values in constant time(O(1)), where as in linked list push and pop is easy but getting the values is O(N)
 
+* ArrayList is used under the hood in javascript arrays.
