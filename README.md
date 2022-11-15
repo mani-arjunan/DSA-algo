@@ -102,3 +102,12 @@ Sorting an array either asc or desc.
 * **Bubble sort**
     iterating over an array and comparing one item(xi) with the next adjacent item(xi+1) if it didn't matches (xi < xi+1) the swap has to happen, with this, the largest value will be moved to the end of the array for each iteration.
     Time complexity of this algorithm is O(n2)
+
+## **Linked List**
+    ```mermaid
+    sequenceDiagram
+    Alice -> Bob: Authentication Request
+    Bob --> Alice: Authentication Response
+    Alice -> Bob:Another authentication Response
+    Bob --> Alice: Another authentication Response
+    ```
