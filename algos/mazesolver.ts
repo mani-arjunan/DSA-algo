@@ -17,11 +17,11 @@ function walk(
 	seen: Array<Array<boolean>>,
 	path: Point[]
 ): boolean | undefined {
-	if (current.x < 0 || current.x >= maze[0].length || current.y < 0 || current.y >= maze.length) {
+	if (current.x < 0 || current.x >= maze.length || current.y < 0 || current.y >= maze[0].length) {
 		return false;
 	}
 
-	if (maze[current.y][current.x] === wall) {
+	if (maze[current.x][current.y] === wall) {
 		return false;
 	}
 
@@ -30,11 +30,11 @@ function walk(
 		return true;
 	}
 
-	if (seen[current.y][current.x]) {
+	if (seen[current.x][current.y]) {
 		return false;
 	}
 
-	seen[current.y][current.x] = true;
+	seen[current.x][current.y] = true;
 	path.push(current);
 	for (let i = 0; i < dir.length; i++) {
 		const [x, y] = dir[i];
@@ -44,7 +44,7 @@ function walk(
 				wall,
 				{
 					x: current.x + x,
-					y: current.y + y
+					y: current.y + y 	
 				},
 				end,
 				seen,
@@ -56,7 +56,12 @@ function walk(
 	}
 	path.pop();
 
-	// return false;
+	/**
+	 * This is not needed for javascript, since javascript returns undefined 
+	 * which is falsy
+	 * */ 
+
+	return false;
 }
 
 export function mazeSolver(
