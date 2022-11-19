@@ -124,3 +124,6 @@ Sorting an array either asc or desc.
 * ArrayList is useful in performing push and pop of elements along with getting those values in constant time(O(1)), where as in linked list push and pop is easy but getting the values is O(N)
 
 * ArrayList is used under the hood in javascript arrays.
+
+## **Recursion**
+    In simplest ways recursion is basically a function that calls itself over and over again untill a base condition is met, a base condition is basically an exit condition.
