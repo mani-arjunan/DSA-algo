@@ -8,6 +8,7 @@ interface QueueInterface<T> {
 export type Node<T> = {
 	value: T;
 	next?: Node<T>;
+	previous?: Node<T>;
 };
 
 export class Queue<T> implements QueueInterface<T> {
@@ -18,9 +19,9 @@ export class Queue<T> implements QueueInterface<T> {
 	constructor(value?: T) {
 		this.head = value
 			? {
-					value,
-					next: null
-			  }
+				value,
+				next: null
+			}
 			: null;
 		this.tail = this.head;
 		this.length = value ? 1 : 0;

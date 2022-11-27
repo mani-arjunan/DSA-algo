@@ -127,3 +127,25 @@ Sorting an array either asc or desc.
 
 ## **Recursion**
     In simplest ways recursion is basically a function that calls itself over and over again untill a base condition is met, a base condition is basically an exit condition.
+
+## Quicksort
+    Quicksort follows divide and conquer approach.
+
+> Divide and conquer simply means to be able to split the input into some number of chunks and loop over those smaller chunks and solves our prblm and splits those chunks smaller and smaller again untill to get our desired output for the prblm.
+
+## Trees.
+    Trees are basically everywhere in computer software, like 
+* unix filesystems are trees.
+* HTML dom is a tree.
+* React virtual dom also represents a tree.
+* Most of the compilers are data structured in tree. (astexplorer.net to view javascript compiler tree)
+
+> Some Terminlogoies
+> * Root - Top most node of the tree. eg: ```<html>``` in HTML, / in filesystem etc.
+> * Height - The longest path from the root to the most last of the children node in that tree.
+> * binary tree - A tree which has atmost 2 children, atleast 0 children.
+> * general tree - A tree with 0 or more children.
+> * binary search tree - A tree which has a specific ordering to the nodes and atmost 2 children.
+> * leaves - A node without any children.
+> * balanced - From the name a tree is said to be perfectly balanced when any node's left and right children have the same height.
+> * branching factor - The amount of children a tree has. 

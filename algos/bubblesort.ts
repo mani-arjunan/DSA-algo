@@ -1,7 +1,7 @@
 export function bubbleSort(arr: Array<number>): Array<number> {
 	let i = 0;
 	while (i != arr.length) {
-		for (let j = 0; j < arr.length - i - 0; j++) {
+		for (let j = 0; j < arr.length - i - 1; j++) {
 			if (arr[j] > arr[j + 1]) {
 				const temp = arr[j];
 				arr[j] = arr[j + 1];
