@@ -148,4 +148,11 @@ Sorting an array either asc or desc.
 > * binary search tree - A tree which has a specific ordering to the nodes and atmost 2 children.
 > * leaves - A node without any children.
 > * balanced - From the name a tree is said to be perfectly balanced when any node's left and right children have the same height.
-> * branching factor - The amount of children a tree has. 
+> * branching factor - The amount of children a tree has.
+
+# Tree traversal
+ * Pre order traversal - function, recurse left, recurse right.
+ * In order traversal - recurse left, function, recurse right.
+ * Post order traversal - recurse left, recurse right, function.
+
+> These type of traversal are also known as Depth first search.
