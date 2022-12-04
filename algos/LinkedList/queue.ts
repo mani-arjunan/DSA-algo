@@ -61,7 +61,6 @@ export class Queue<T> implements QueueInterface<T> {
 	}
 }
 
-// My own test cases
 // const q = new Queue<number>(1);
 // console.log(q.enqueue(2));
 // console.log(q.length);

@@ -156,3 +156,11 @@ Sorting an array either asc or desc.
  * Post order traversal - recurse left, recurse right, function.
 
 > These type of traversal are also known as Depth first search.
+> This Depth first search uses stack data structure, which in general programming we code with recursion which is a stack of functions.
+
+# Breadth first search
+    BFS uses queue data structure.
+
+# BST(Binary search tree)
+    BST is a classic when coming to the trees, they are specifically an ordering to
+the data within the data structure differently
