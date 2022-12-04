@@ -1,5 +1,5 @@
 import { breadthFirstSearch } from '../algos/breadthfirstsearch'
-import { tree } from "../contants/test-helpers";
+import { tree } from "../constants/test-helpers";
 
 test("test breadth first search", function () {
     expect(breadthFirstSearch(tree, 45)).toEqual(true);

@@ -1,5 +1,5 @@
 import { compare } from '../algos/binarytreecomparision'
-import { tree } from '../contants/test-helpers'
+import { tree } from '../constants/test-helpers'
 
 test('test binary tree comparision', () => {
     // postive case
