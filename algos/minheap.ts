@@ -1,8 +1,10 @@
 export class MinHeap<T> {
     public length: number;
-    constructor(private data: T[]) {
+    private data: T[];
+
+    constructor() {
         this.data = []
-        this.length = this.data.length;
+        this.length = 0;
     }
 
     insert(value: T): void {
@@ -23,9 +25,9 @@ export class MinHeap<T> {
         }
 
         this.data[0] = this.data[this.length - 1]
-        this.heapDown(0)
         this.length--;
-        return
+        this.heapDown(0)
+        return headElement
     }
 
     private parent(index: number): number {
@@ -60,7 +62,7 @@ export class MinHeap<T> {
         const leftChildIndex = this.getLeftChild(index);
         const rightChildIndex = this.getRightChild(index);
 
-        if (index >= this.length && leftChildIndex >= this.length) {
+        if (index >= this.length || leftChildIndex >= this.length) {
             return;
         }
 
