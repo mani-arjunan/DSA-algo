@@ -150,7 +150,7 @@ Sorting an array either asc or desc.
 > * balanced - From the name a tree is said to be perfectly balanced when any node's left and right children have the same height.
 > * branching factor - The amount of children a tree has.
 
-# Tree traversal
+## Tree traversal
  * Pre order traversal - function, recurse left, recurse right.
  * In order traversal - recurse left, function, recurse right.
  * Post order traversal - recurse left, recurse right, function.
@@ -158,13 +158,20 @@ Sorting an array either asc or desc.
 > These type of traversal are also known as Depth first search.
 > This Depth first search uses stack data structure, which in general programming we code with recursion which is a stack of functions.
 
-# Breadth first search
+## Breadth first search
     BFS uses queue data structure.
 
-# BST(Binary search tree)
+## BST(Binary search tree)
     BST is a classic when coming to the trees, they are specifically an ordering to
 the data within the data structure differently
 
 Rules of BST:
  * left side of the node has to be less than or equal to current node(<=)
  * right side of the node has to be greater than to the current node(>)
+
+## Heap
+    The simplest way to put this, it is a binary tree where every child and 
+grandchildren is smaller(maxHeap) or larger(minHeap) than the current node.
+* Whenever the node is added, we need to adjust the tree.
+* Whenever the node is deleted, we need to adjust the tree.
+* There is no traversing the tree, we can technically traverse, but there are no general use cases for this operation.
