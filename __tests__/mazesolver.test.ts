@@ -1,6 +1,6 @@
 import { mazeSolver, Point } from '../algos/mazesolver';
 
-test.only('maze solver', function () {
+test('maze solver', function () {
 	const maze = [
 		'xxxxxxxxxx x',
 		'x        x x',
