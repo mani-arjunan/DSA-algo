@@ -164,3 +164,7 @@ Sorting an array either asc or desc.
 # BST(Binary search tree)
     BST is a classic when coming to the trees, they are specifically an ordering to
 the data within the data structure differently
+
+Rules of BST:
+ * left side of the node has to be less than or equal to current node(<=)
+ * right side of the node has to be greater than to the current node(>)
