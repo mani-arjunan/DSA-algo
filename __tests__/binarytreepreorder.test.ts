@@ -1,5 +1,5 @@
 import { preOrderSearch } from '../algos/binarytreepreorder';
-import { tree } from '../contants/test-helpers';
+import { tree } from '../constants/test-helpers';
 
 test('Binary Tree in order test', () => {
 	expect(preOrderSearch(tree)).toEqual([

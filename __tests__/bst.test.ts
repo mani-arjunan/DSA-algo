@@ -1,5 +1,5 @@
 import { findOnBST } from "../algos/binarysearchtree";
-import { tree } from "../contants/test-helpers";
+import { tree } from "../constants/test-helpers";
 
 test("test for BST search", function () {
     expect(findOnBST(tree, 45)).toEqual(true);
