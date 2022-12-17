@@ -16,15 +16,15 @@ export class Queue<T> implements QueueInterface<T> {
 	private head?: Node<T>;
 	private tail?: Node<T>;
 
-	constructor(value?: T) {
-		this.head = value
+	constructor(value: T = null) {
+		this.head = value !== null
 			? {
 				value,
 				next: null
 			}
 			: null;
 		this.tail = this.head;
-		this.length = value ? 1 : 0;
+		this.length = value !== null ? 1 : 0;
 	}
 
 	enqueue(item: T): void {

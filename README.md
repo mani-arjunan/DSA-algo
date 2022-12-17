@@ -175,3 +175,37 @@ grandchildren is smaller(maxHeap) or larger(minHeap) than the current node.
 * Whenever the node is added, we need to adjust the tree.
 * Whenever the node is deleted, we need to adjust the tree.
 * There is no traversing the tree, we can technically traverse, but there are no general use cases for this operation.
+
+## Graphs
+	One of the hardest part of the DSA, all problems may or may not eventually led up to graphql.
+* A graph is simply a series of nodes with some amount of connections, no matter like top down or left right, its plainnodes with a lot of connections.
+
+> * cycle: When we start at a node(X) follow the links of the node and eventually end back to the same Node(X).
+> * acyclic: A graph with no cycles.
+> * connected graph: Every node in our graph can able to reach every other node.
+> * directed graph: When there is a direction to the connections, meaning one way connections like an arrow. 
+> * undirected graph: !directed.
+> * weighted: The edges that have weights(distance) between two nodes.
+> * node: a point or vertex in a graph.
+> * edge: a connection between two nodes.
+
+> BigO is commonly stated in graphs in terms of V and E where V stands for vertices(nodes) and E stands for Edges
+so O(V+E) means that we will check every vertex, and on every vertex we check every edge.
+
+## Dijkstra shortest path
+    Calculates the shortest path from one node to all other nodes.
+
+> Used to calculate shortest path in google maps.
+
+
+## Maps(HashMaps)
+    A key mapped to a value is mostly are maps, this is called consistent hash.
+for a key it will always gives the same value(consistent hash).
+
+> load Factor: The amount of data points vs the amount of storage(data.length / storage.capacity).
+> key: a value that is hashable and is used to lookup the data, the hash has to be consistent.
+> value: value that is associated to key.
+> collision: when 2 keys map to the same cell.
+
+## LRU(Least Recently Used)
+    LRU is a caching mechanism, basically evict the least recently used data.
