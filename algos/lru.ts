@@ -10,21 +10,21 @@ function createNode<V>(value: V): Node<V> {
 	}
 }
 
-export class LRU<K, V> {
+export class LRU<V> {
 	private length: number;
 	private head: Node<V>;
 	private tail: Node<V>;
-	private map: Map<K, Node<V>>;
-	private reverseMap: Map<Node<V>, K>;
+	private map: Map<string, Node<V>>;
+	private reverseMap: Map<Node<V>, string>;
 
 	constructor(private capacity: number) {
 		this.tail = this.head = null;
 		this.length = 0;
-		this.map = new Map<K, Node<V>>();
-		this.reverseMap = new Map<Node<V>, K>();
+		this.map = new Map<string, Node<V>>();
+		this.reverseMap = new Map<Node<V>, string>();
 	}
 
-	update(key: K, value: V): void {
+	update(key: string, value: V): void {
 		const node = this.map.get(key);
 		if (!node) {
 			const node = createNode(value);
@@ -40,7 +40,7 @@ export class LRU<K, V> {
 		}
 	}
 
-	get(key: K): V | undefined {
+	get(key: string): V | undefined {
 		const node = this.map.get(key);
 
 		if (!node) {

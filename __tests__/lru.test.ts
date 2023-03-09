@@ -1,7 +1,7 @@
 import { LRU } from '../algos/lru'
 
 test("LRU", function () {
-    const lru = new LRU<string, number>(3)
+    const lru = new LRU<number>(3)
     expect(lru.get("foo")).toEqual(undefined);
     lru.update("foo", 69);
     expect(lru.get("foo")).toEqual(69);
