@@ -13,34 +13,7 @@ type LinkedList struct {
 	length int
 }
 
-func convertToArr(l *LinkedList) []int {
-	var arr []int
-
-	curr := l.head
-
-	for curr != nil {
-		arr = append(arr, curr.value)
-		curr = curr.next
-	}
-
-	return arr
-}
-
-func sort(arr []int) []int {
-	for i := 0; i < len(arr); i++ {
-		for j := 0; j < len(arr)-i; j++ {
-			if j+1 < len(arr) && arr[j] > arr[j+1] {
-				temp := arr[j]
-				arr[j] = arr[j+1]
-				arr[j+1] = temp
-			}
-		}
-	}
-
-	return arr
-}
-
-func insertIntoNode(l *LinkedList, val int) {
+func (l *LinkedList) Insert(val int) {
 	node := Node{
 		next:  nil,
 		value: val,
@@ -53,20 +26,28 @@ func insertIntoNode(l *LinkedList, val int) {
 		return
 	}
 
-	(*l.tail).next = &node
-	l.tail = &node
-}
-
-func (l *LinkedList) Insert(val int) {
-	insertIntoNode(l, val)
-	arr := convertToArr(l)
-	sort(arr)
-	l.head = nil
-	l.tail = nil
-
-	for _, val := range arr {
-		insertIntoNode(l, val)
+	if val <= l.head.value {
+		if l.head == l.tail {
+			l.tail = &node
+		}
+		node.next = l.head
+		l.head = &node
+		return
 	}
+
+	curr := l.head
+
+	for curr.next != nil && curr.next.value < val {
+		curr = curr.next
+	}
+
+  node.next = curr.next
+	curr.next = &node
+
+	if node.next == nil {
+		l.tail = &node
+	}
+
 }
 
 func (l *LinkedList) Search(val int) int {
@@ -135,6 +116,8 @@ func main() {
 	l1.Insert(10)
 	l1.Insert(2)
 	l1.Insert(1)
-	l1.Delete(10)
+	l1.Insert(10)
 	l1.Print()
 }
+
+// 1 -> 2 -> 3 -> 4
